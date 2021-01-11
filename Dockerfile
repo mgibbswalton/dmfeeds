@@ -4,6 +4,7 @@ MAINTAINER Jeff Puckett
 
 COPY . /var/www/html
 
+RUN  chmod a+rx -R /var/www/html/docker
 RUN /var/www/html/docker/install.bash
 
 COPY ./docker/entrypoint ./docker/apache2-foreground /usr/local/bin/
