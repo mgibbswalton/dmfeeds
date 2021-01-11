@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Jeff Puckett
+MAINTAINER Michael Gibbs
 
 COPY . /var/www/html
 
