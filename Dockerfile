@@ -4,7 +4,7 @@ MAINTAINER Michael Gibbs
 
 COPY . /var/www/html
 
-RUN composer update
+
 RUN  chmod a+rx -R /var/www/html/docker
 RUN /var/www/html/docker/install.bash
 
