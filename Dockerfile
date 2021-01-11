@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 MAINTAINER Michael Gibbs
 
 COPY . /var/www/html
-RUN  cp .env.example .env
+
 RUN  chmod a+rx -R /var/www/html/docker
 RUN /var/www/html/docker/install.bash
 
